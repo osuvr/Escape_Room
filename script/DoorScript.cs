@@ -28,20 +28,14 @@ public class DoorScript : MonoBehaviour {
             {
                 if(doorKey1 && doorKey2)
                 {
-                    if(Input.GetKeyDown(KeyCode.E))
-                    {
                         open = true;
                         close = false;
-                    }
                 }
             }
             else
             {
-                if (Input.GetKeyDown(KeyCode.E))
-                {
                     close = true;
                     open = false;
-                }
             }
         }
 
@@ -63,13 +57,13 @@ public class DoorScript : MonoBehaviour {
         {
             if(open)
             {
-                GUI.Box(new Rect(0, 0, 200, 25), "Press E to close");
+                GUI.Box(new Rect(0, 0, 200, 25), "You win the game!");
             }
             else
             {
                 if(doorKey1 && doorKey2)
                 {
-                    GUI.Box(new Rect(0, 0, 200, 25), "Press E to open");
+                    GUI.Box(new Rect(0, 0, 200, 25), "Door is opening");
                 }
                 else if(doorKey1)
                 {
@@ -81,7 +75,7 @@ public class DoorScript : MonoBehaviour {
                 }
                 else
                 {
-                    GUI.Box(new Rect(0, 0, 200, 25), "Need a key");
+                    GUI.Box(new Rect(0, 0, 200, 25), "Need all key");
                 }
             }
         }

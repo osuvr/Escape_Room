@@ -20,11 +20,7 @@ public class DoorKey1 : MonoBehaviour {
     {
         if(inTrigger)
         {
-            if(Input.GetKeyDown(KeyCode.E))
-            {
-                Lock1Script.havekey1 = true;
-                Destroy(this.gameObject);
-            }
+            Lock1Script.havekey1 = true;
         }
     }
 
@@ -32,7 +28,7 @@ public class DoorKey1 : MonoBehaviour {
     {
         if(inTrigger)
         {
-            GUI.Box(new Rect(0, 0, 200, 25), "Press E to take key");
+            GUI.Box(new Rect(0, 0, 200, 25), "Key 1");
         }
     }
 }

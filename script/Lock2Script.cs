@@ -19,13 +19,10 @@ public class Lock2Script : MonoBehaviour {
 
     void Update()
     {
-        if (inTrigger)
+        if (inTrigger && havekey2)
         {
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                DoorScript.doorKey2 = true;
-                Destroy(this.gameObject);
-            }
+            Destroy(this.gameObject);
+            DoorScript.doorKey2 = true;
         }
     }
 
@@ -33,7 +30,7 @@ public class Lock2Script : MonoBehaviour {
     {
         if (inTrigger)
         {
-            GUI.Box(new Rect(0, 0, 200, 25), "Press E to unlock");
+            GUI.Box(new Rect(0, 0, 200, 25), "Lock 2 is unlocked");
         }
     }
 }
