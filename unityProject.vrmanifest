@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.test2.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "C:\\Users\\cos-vislab\\Documents\\GitHub\\Escape_Room\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "Test2 [Testing]"
+        }
+      }
+    }
+  ]
+}
